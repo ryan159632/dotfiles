@@ -6,7 +6,7 @@
 # If not, see <http://creativecommons.org/publicdomain/zero/1.0/>. 
 
 # prompt:
-#PS1='\w $'
+PS1='\w $'
 
 # base-files version 4.1-1
 
@@ -99,8 +99,8 @@
 # alias mv='mv -i'
 #
 # Default to human readable figures
-# alias df='df -h'
-# alias du='du -h'
+alias df='df -h'
+alias du='du -h'
 #
 # Misc :)
 # alias less='less -r'                          # raw control characters
@@ -114,8 +114,11 @@
 # alias dir='ls --color=auto --format=vertical'
 # alias vdir='ls --color=auto --format=long'
 # alias ll='ls -l'                              # long list
-# alias la='ls -A'                              # all but . and ..
+alias la='ls -A'                              # all but . and ..
 # alias l='ls -CF'                              #
+
+# Others
+alias em='emacs -nw'
 
 # Umask
 #
@@ -199,3 +202,7 @@
 # }
 # 
 # alias cd=cd_func
+
+# Colors
+export TERM="xterm-256color"
+LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:*.deb=90'
